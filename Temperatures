@@ -54,3 +54,11 @@ public class MonthlyTemperatureTracker {
                     break;
                 }
             }
+            if (!found) {
+                System.out.println("\nInvalid input. Please enter a valid month name or 'year'.");
+            }
+        }
+
+        scanner.close();
+    }
+}
