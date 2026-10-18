@@ -17,3 +17,10 @@ public class MonthlyTemperatureTracker {
         String userInput = scanner.nextLine().trim();
 
  
+        if (userInput.equalsIgnoreCase("year")) {
+            double sum = 0;
+            double highest = temperatures[0];
+            double lowest = temperatures[0];
+            String highestMonth = months[0];
+            String lowestMonth = months[0];
+
