@@ -38,3 +38,19 @@ public class MonthlyTemperatureTracker {
                     lowestMonth = months[i];
                 }
             }
+
+            double yearlyAverage = sum / temperatures.length;
+            System.out.printf("\nYearly Average Temperature: %.2f°F\n", yearlyAverage);
+            System.out.println("Highest Average: " + highestMonth + " (" + highest + "°F)");
+            System.out.println("Lowest Average: " + lowestMonth + " (" + lowest + "°F)");
+
+        } else {
+            boolean found = false;
+            for (int i = 0; i < months.length; i++) {
+                if (months[i].equalsIgnoreCase(userInput)) {
+                    System.out.println("\nMonth: " + months[i]);
+                    System.out.println("Average Temperature: " + temperatures[i] + "°F");
+                    found = true;
+                    break;
+                }
+            }
